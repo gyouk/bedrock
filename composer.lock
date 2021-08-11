@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa5118a71bc3154343d2245fd3993f22",
+    "content-hash": "e709f88291d0a37961ac4a0a82ecbee9",
     "packages": [
         {
             "name": "composer/installers",
@@ -151,6 +151,58 @@
                 }
             ],
             "time": "2021-04-28T06:42:17+00:00"
+        },
+        {
+            "name": "devgeniem/acf-codifier",
+            "version": "1.36.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devgeniem/acf-codifier.git",
+                "reference": "a952194080c4d2eb3ab1768e6ca0f072b02cb393"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devgeniem/acf-codifier/zipball/a952194080c4d2eb3ab1768e6ca0f072b02cb393",
+                "reference": "a952194080c4d2eb3ab1768e6ca0f072b02cb393",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "conflict": {
+                "devgeniem/redipress": "<1.9"
+            },
+            "require-dev": {
+                "victorjonsson/markdowndocs": "^1.3"
+            },
+            "type": "wordpress-muplugin",
+            "autoload": {
+                "psr-4": {
+                    "Geniem\\ACF\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Miika Arponen",
+                    "email": "miika@geniem.com",
+                    "homepage": "http://geniem.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "ACF Codifier",
+            "keywords": [
+                "acf",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/devgeniem/acf-codifier/issues",
+                "source": "https://github.com/devgeniem/acf-codifier/tree/1.36.0"
+            },
+            "time": "2021-02-24T07:30:35+00:00"
         },
         {
             "name": "graham-campbell/result-type",
