@@ -197,22 +197,5 @@ function my_acf_init_block_types() {
         ));
     }
 }
-add_action('acf/init', 'my_gutenberg_init_block_types');
-function my_gutenberg_init_block_types() {
 
-// Check function exists.
-    if (function_exists('acf_register_block_type')) {
-
-        // register a Gutenberg block.
-        acf_register_block_type(array(
-            'name' => 'Gutenberg',
-            'title' => __('Gutenberg'),
-            'description' => __('A custom gutenberg block.'),
-            'render_template' => 'template-parts/blocks/gutenberg.php',
-            'category' => 'formatting',
-            'icon' => 'admin-comments',
-            'keywords' => array('gutenberg', 'block'),
-        ));
-    }
-}
 include_once 'fields.php';
