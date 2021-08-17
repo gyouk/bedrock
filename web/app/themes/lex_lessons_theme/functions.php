@@ -199,3 +199,4 @@ function my_acf_init_block_types() {
 }
 
 include_once 'fields.php';
+include_once 'blocks.php';
