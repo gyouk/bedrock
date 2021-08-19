@@ -13,7 +13,6 @@ add_action( 'init', function() {
     $autor_field = new Text('autor');
     $role_field = new Text('role');
     $image_field = new Image('role');
-    $image_field->set_return_format('id');
     $background_color_field = new Color('background_color');
     $text_color_field = new Color('text_color');
 

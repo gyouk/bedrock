@@ -17,10 +17,12 @@ class ImageAndTextBlock extends Block
 	 */
 	public function __construct( string $title = 'text and image', string $name = 'text-and-image' )
 	{
-
 		parent::__construct($title, $name);
 
 		$title = new Text('Title', 'title', 'title');
+
+		$this->add_post_type( 'page' );
+        $this->set_category( 'common' );
 
 		$this->add_fields(
 			array(

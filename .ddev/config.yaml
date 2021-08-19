@@ -1,5 +1,5 @@
 name: bedrock
-type: php
+type: wordpress
 docroot: web
 php_version: "7.4"
 webserver_type: nginx-fpm
@@ -180,3 +180,6 @@ web_environment: []
 # information on the commands that can be extended and the tasks you can define
 # for them. Example:
 #hooks:
+# Un-comment to emit the WP CLI version after ddev start.
+#  post-start:
+#    - exec: wp cli version
