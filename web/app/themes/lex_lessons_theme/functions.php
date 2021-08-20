@@ -227,7 +227,7 @@ function create_taxonomy()
             'new_item_name'     => 'New Примерчик Name',
             'menu_name'         => 'Примерчик',
         ],
-        'description'           => ' такса для примерчиков',
+        'description'           => 'такса для примерчиков',
         'public'                => true,
         'hierarchical'          => false,
         'rewrite'               => true,

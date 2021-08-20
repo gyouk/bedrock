@@ -17,16 +17,18 @@ class GutenTestimonianBlock extends Block
      * @param string $name
      * @throws \Geniem\ACF\Exception
      */
-    public function __construct( string $title = 'title', string $name='name' ) {
+    public function __construct( string $title = 'Guten', string $name='name' ) {
         parent::__construct($title, $name);
 
-        $guten = new Textarea('Title', 'Titles', 'Titles');
+        $guten = new Textarea('guten', 'Titles', 'Titles');
         $autor = new Text('Autor', 'Autors', 'Autors');
         $roles = new Text('Role', 'Roles', 'Roles');
         $image = new Image('roles');
         $background_color = new Color('background_colors');
         $text_color = new Color('text_colors');
 
+        $this->add_post_type('post_primer');
+        $this->set_mode('edit');
 
         $this->add_fields(
             array(
