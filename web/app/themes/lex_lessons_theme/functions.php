@@ -200,11 +200,15 @@ function my_acf_init_block_types()
         ));
     }
 }
-include_once 'fields.php';
+//include_once 'fields.php';
 
 include_once 'blocks.php';
 
 include_once 'guten.php';
+
+//groups fields for post_type 'post_primer'
+
+include_once 'Group.php';
 
 //register taxonomy
 add_action('init', 'create_taxonomy');
@@ -268,7 +272,7 @@ function create_primer() {
         'taxonomies'          => [],
         'has_archive'         => false,
         'rewrite'             => true,
-        'menu_icon'           => 'dashicons-cart',
+        'menu_icon'           => 'groups',
         'query_var'           => true,
     ]);
 }
